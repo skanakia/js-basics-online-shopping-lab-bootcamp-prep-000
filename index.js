@@ -54,7 +54,7 @@ function removeFromCart(item) {
   if (itemCheck === null) {
     return "That item is not in your cart."
   } else {
-    cart.splice()
+    cart.splice(itemCheck, 1)
   }
     
 }
