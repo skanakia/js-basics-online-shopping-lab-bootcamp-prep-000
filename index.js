@@ -26,7 +26,7 @@ function viewCart() {
       if (cart.length === 1) {
       returnSent = returnSent + cart[i].itemName + " at $" + cart[i].itemPrice + "."
       } else {
-        returnSent = returnSent + cart[i].itemName
+        returnSent = returnSent + cart[i].itemName + " at $" + cart[i].itemPrice + ', '
       }
     }
   }
