@@ -24,7 +24,7 @@ function viewCart() {
     var returnSent = "In your cart, you have "
     for (var i = 0; i < cart.length; i++) {
       if (cart.length === 1) {
-      returnSent += "${cart[i].itemName} at $${cart[i].itemPrice}."
+      returnSent += cart[i].itemName + " at $" + cart[i].itemPric+ "."
       } else {
         returnSent += "{cart[i].itemName} at $${cart[i].itemPrice}, "
       }
