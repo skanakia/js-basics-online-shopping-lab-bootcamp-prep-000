@@ -13,6 +13,7 @@ function addToCart(item) {
  var name = item
  var price = parseInt(Math.random() * 100)
  var addCart = {itemName: name, itemPrice: price}
+ cart.push(addCart)
  return name + " has been added to your cart."
 }
 
