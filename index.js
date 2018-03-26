@@ -21,12 +21,11 @@ function viewCart() {
   if (cart.length === 0) {
     return "Your shopping cart is empty."
   } else {
-    
   var returnSent = "In your cart, you have "
- for (var i = 0; i < cart.length; i++) {
-   
-   } else {
-     returnSent = returnSent + cart.key + " at $" + cart.value + 
+    for (var i = 0; i < cart.length; i++) {
+      returnSent = returnSent + cart.key + " at $" + cart.value + ", " 
+    }
+  } 
 }
 
 function total() {
