@@ -21,14 +21,14 @@ function viewCart() {
   if (cart.length === 0) {
     return "Your shopping cart is empty."
   } else {
-    var returnSent = "In your cart, you have "
+    var cartSent = "In your cart, you have "
     for (var i = 0; i < cart.length; i++) {
       if (i === cart.length - 1 && cart.length !== 1) {
-        returnSent += ` and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
+        cartSent += ` and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
       } else if (cart.length === 1) {
-        returnSent += ` ${cart[i].itemName} at $${cart[i].itemPrice}.`;
+        cartSent += ` ${cart[i].itemName} at $${cart[i].itemPrice}.`;
       } else {
-        returnSent += ` ${cart[i].itemName} at $${cart[i].itemPrice},`;
+        cartSent += ` ${cart[i].itemName} at $${cart[i].itemPrice},`;
       }
     }
   }
