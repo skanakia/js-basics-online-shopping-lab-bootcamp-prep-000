@@ -23,10 +23,12 @@ function viewCart() {
   } else {
     var returnSent = "In your cart, you have "
     for (var i = 0; i < cart.length; i++) {
-      if (cart.length === 1) {
-      returnSent += cart[i].itemName + " at $" + cart[i].itemPric+ "."
+      if (i === cart.length - 1 && cart.length !== 1) {
+        cartString += ` and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
+      } else if (cart.length === 1) {
+        cartString += ` ${cart[i].itemName} at $${cart[i].itemPrice}.`;
       } else {
-        returnSent += "{cart[i].itemName} at $${cart[i].itemPrice}, "
+        cartString += ` ${cart[i].itemName} at $${cart[i].itemPrice},`;
       }
     }
 }
