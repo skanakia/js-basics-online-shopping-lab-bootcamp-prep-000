@@ -56,7 +56,7 @@ function removeFromCart(item) {
   } else {
     cart.splice(itemCheck, 1)
   }
-    
+  return cart  
 }
 
 function placeOrder(cardNumber) {
