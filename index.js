@@ -31,6 +31,7 @@ function viewCart() {
         cartSent += ` ${cart[i].itemName} at $${cart[i].itemPrice},`;
       }
     }
+    return cartSent
   }
 }
 
