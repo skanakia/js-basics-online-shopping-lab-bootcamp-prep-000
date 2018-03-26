@@ -31,7 +31,7 @@ function viewCart() {
         returnSent += ` ${cart[i].itemName} at $${cart[i].itemPrice},`;
       }
     }
-}
+  }
 }
 
 function total() {
