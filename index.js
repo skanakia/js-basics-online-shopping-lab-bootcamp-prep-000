@@ -23,10 +23,13 @@ function viewCart() {
   } else {
   var returnSent = "In your cart, you have "
     for (var i = 0; i < cart.length; i++) {
-      if (cart.length === 1)
-      returnSent = returnSent + cart[i].key + " at $" + cart[i].value + "." 
+      if (cart.length === 1) {
+      returnSent = returnSent + cart[i].itemName + " at $" + cart[i].itemPrice + "."
+      } else {
+        returnSent = returnSent
+      }
     }
-  } 
+  }
 }
 
 function total() {
