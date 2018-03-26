@@ -24,12 +24,11 @@ function viewCart() {
   var returnSent = "In your cart, you have "
     for (var i = 0; i < cart.length; i++) {
       if (cart.length === 1) {
-      returnSent = returnSent + cart[i].itemName + " at $" + cart[i].itemPrice + "."
+      returnSent += "${cart[i].itemName} at $${cart[i].itemPrice}."
       } else {
-        returnSent = returnSent + cart[i].itemName + " at $" + cart[i].itemPrice + ', '
+        returnSent += "{cart[i].itemName} at $${cart[i].itemPrice}, "
       }
     }
-  }
 }
 
 function total() {
